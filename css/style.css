@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Inter:wght@400;500;700&family=Jomhuria&family=Open+Sans:ital,wght@0,300;0,500;1,700&family=Rubik:wght@300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+  font-weight: 300;
+}
+
+.generator-box {
+  width: 30rem;
+  margin: 100px auto;
+
+}
+
+.copy-icon,
+.check-icon {
+  width: 20px;
+  height: 20px;
+  stroke: black;
+  stroke-width: 1.2px;
+  position: absolute;
+  right: 10px;
+}
+
+.active,
+.copy-icon:hover {
+  stroke: #0247fc;
+}
+
+.hide {
+  display: none;
+}
+
+#generator-slider {
+  width: 100%;
+}
+
+.generator-button {
+  width: 100%;
+  border-radius: 15px;
+
+}
+
+.generator-button:hover {
+  background-color: #0247fc;
+}
+
+.password-structure {
+  width: 100%;
+}
+
+.password-form {
+  font-weight: 500;
+}

@@ -52,6 +52,7 @@ GENERATE_BUTTON.addEventListener("click", function () {
   generatePassword();
   COPY_ICON.classList.replace("hide", "copy-icon");
   CHECK_ICON.classList.replace("check-icon", "hide");
+  CHECK_ICON.classList.remove("active");
 });
 
 // copy password
@@ -61,6 +62,7 @@ COPY_ICON.addEventListener("click", function (e) {
     navigator.clipboard.writeText(INPUT_FIELD.value);
     COPY_ICON.classList.replace("copy-icon", "hide");
     CHECK_ICON.classList.replace("hide", "check-icon");
+    CHECK_ICON.classList.add("active");
   } else {
     INPUT_FIELD.placeholder = "press generate password";
   }

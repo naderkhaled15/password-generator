@@ -5,17 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password Generator</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="js/index.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/index.js"></script>
 
 </head>
 
 <body>
-  <div class="generator-box">
-    <h2 class="generate-header">Password Generator</h2>
-    <div class="generator-display">
-      <input type="text" placeholder="generate password" disabled id="generator-display--input"></input>
-      <!-- copy -->
+  <div class="generator-box shadow rounded-4 p-4 d-flex justify-content-center align-items-center flex-column">
+    <!-- head -->
+    <p class="generate-header h2 text-center fw-bold my-4">Password Generator</p>
+
+    <!-- input box -->
+    <div
+      class="generator-display input-group position-relative py-1 mb-3 d-flex justify-content-between align-items-center w-100">
+
+      <input type="text" class="form-control fs-4 bg-light p-3 w-100 bg-light rounded-4" placeholder="generate password"
+        id="generator-display--input" aria-label="generate password" disabled>
+
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="copy-icon " class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round"
@@ -29,37 +36,41 @@
       </svg>
     </div>
 
+    <!-- password structure -->
     <div class="password-structure">
-      <form class="password-form">
-        <div>
+      <form class="password-form d-flex flex-column fs-3 fst-italic">
+        <div class="d-flex justify-content-between align-items-center mt-2">
           <label for="cChar">A-Z</label>
           <input type="checkbox" id="cChar" checked disabled>
         </div>
-        <div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
           <label for="sChar">a-z</label>
           <input type="checkbox" id="sChar">
         </div>
-        <div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
           <label for="num">0-9</label>
           <input type="checkbox" id="num">
         </div>
-        <div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
           <label for="symbols">!@#%</label>
           <input type="checkbox" id="symbols">
         </div>
       </form>
     </div>
 
-
-    <div class="generator-range">
+    <!-- password range -->
+    <div class="generator-range d-flex justify-content-between align-items-center w-100 p-2 mt-4">
       <input type="range" value="10" min="6" max="16" id="generator-slider">
-      <span class="generator-amount"></span>
+      <span class="generator-amount fs-3 ms-2"></span>
     </div>
 
-    <button class="generator-button">Generate Password</button>
+    <!-- generator button -->
+    <button class="generator-button btn btn-primary btn-lg p-3 mt-4 fs-3 border border-info" type="button">Generate
+      Password</button>
 
   </div>
 
+  <script src="./js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
