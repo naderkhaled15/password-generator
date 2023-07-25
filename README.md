@@ -9,7 +9,7 @@ Looking to use [click here](https://naderkhaled15.github.io/password-generator/?
 
 A Password Generator is used to generate random passwords 
 
-#### Features include:
+### Features include:
 
 * Generated passwords are impossible to predict or manipulate
 * Many options to control how passwords are generated
